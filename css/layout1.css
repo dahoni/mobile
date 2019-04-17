@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+@font-face{
+	font-family:nanum;
+	src:local('nanum'),
+		url('../font/NanumGothic.eot'),
+		url('../font/NanumGothic.woff') format('woff'),
+		url('../font/NanumGothic.ttf') format('truetype');
+}
+
+
+/*reset*/
+a{text-decoration: none; color: inherit;}
+body{font: normal 12px "nanum", sans-serif; color: #666;}
+html, body{width: 100%; height: 100%;}
+
+/*wrap*/
+#wrap{width: 100%; height: 100%; min-width: 320px; /* 최소너비 설정 => 320px 이하로 줄이면 스크롤 생성 */ }
+
+
+.all_menu img{float: left; margin:20px 20px; cursor: pointer;}
+.menu_wrap{background-color: rgba(71,69,69,0.9); width: 70%; height: 100%; position: fixed; top: 0; left: -100%; /*화면 왼쪽 배치*/ padding-top: 20px;  box-sizing: border-box; z-index: 2;}
+.hover img{float: left; margin-left: 20px; z-index: 3; cursor: pointer;}
+.menu{margin-top: 47px;}
+.menu1{font:20px "nanum",sans-serif; color: #F6E7BA; text-align: center; background-color: #6b5742; width: 100%;line-height: 70px; margin-top: 1px;}
+.menu1:hover{color: #fff;}
+.menu1_1{font:20px "nanum",sans-serif; color: #F6E7BA; text-align: center; background-color: #6b5742; width: 100%; line-height: 70px;}
+.menu1_1:hover{color: #fff;}
+
+.s_menu{width: 100%; height: 145px; }
+.s_menu li{color: #F6E7BA; font:15px "nanum",sans-serif; background-color: #c38212; text-align: center; line-height: 48px; height: 48px;}
+.s_menu li:hover{color: #fff;}
+
+#top h1{background-color: #fff; text-align: center; width: 100%; height: 66px;}
+#top h1 img{position: absolute; left: 50%; transform: translateX(-50%); margin-top: 3%;}
+
+#banner{position:relative;}
+.banner img{width: 100%;}
+.ba_1, .ba_2, .ba_3{position: absolute; left: 50%; transform: translateX(-50%);}
+#banner .ba_1{top: 10%;}
+#banner .ba_2{top: 40%;}
+#banner .ba_3{top: 70%;}
+
+/*container*/
+
+#container{width: 100%;}
+.bar{width: 85%; margin: 10% auto;}
+.bar img{width: 100%;}
+
+
+#container_menu{width: 85%; height: 209px; margin: 0 auto; position: relative;}
+#container_menu p{width: 47%; height: 45%; -webkit-background-size: 100%; }
+
+.con_menu{float:left; background: url("../images/con_menu.png") no-repeat left top; transition:all 1s; cursor: pointer;}
+.con_menu a{width: 100%; height: 100%; display: block;}
+.con_menu:hover{background:url("../images/con_menu_hover.png") no-repeat left top; }
+
+.con_rese{float: right; background: url("../images/con_rese.png") no-repeat right top; transition:all 1s; cursor: pointer;}
+.con_rese a{width: 100%; height: 100%; display: block;}
+.con_rese:hover{background:url("../images/con_rese_hover.png") no-repeat right top; }
+
+.con_int{float:left; background: url("../images/con_int.png") no-repeat left bottom; transition:all 1s; margin-top: 6%; cursor: pointer;}
+.con_int a{width: 100%; height: 100%; display: block;}
+.con_int:hover{background:url("../images/con_int_hover.png") no-repeat left bottom; }
+
+.con_notice{float: right; background: url("../images/con_notice.png") no-repeat right bottom; transition:all 1s; margin-top: 6%; cursor: pointer;}
+.con_notice a{width: 100%; height: 100%; display: block;}
+.con_notice:hover{background:url("../images/con_notice_hover.png") no-repeat right bottom; }
+
+
+
+
+
+/*menu.html*/
+
+
+/*top_int*/
+
+#top_int{width: 85%; margin: 0 auto; text-align: center;}
+#top_int .top_bar{text-align: center; margin-top: 5%;}
+#top_int .top_bar img{width: 100%;}
+.top_int{margin-top: 5%;}
+
+/*menu_detail*/
+
+#menu_detail{width: 90%; height: 249px; margin: 0 auto; position: relative; margin-top: 10%;}
+#menu_detail p{width: 30%; height: 47%; -webkit-background-size: 100%; background-size:100% ;}
+.menu_detail {width: 100%; height: 100%;}
+.menu_detail a{width: 103px; height: 103px; display: block;}
+
+.m_best{float: left; background: url("../images/menu/best.png") no-repeat left top; transition:all 1s; cursor: pointer; margin-right: 4.5%;}
+.m_best:hover{background: url("../images/menu/best_hover.png") no-repeat left top;}
+
+.m_course{float: left; background: url("../images/menu/course.png") no-repeat left top; transition:all 1s; cursor: pointer; margin-right: 3%;}
+.m_course:hover{background: url("../images/menu/course_hover.png") no-repeat left top;}
+
+.m_set{float: right; background: url("../images/menu/set.png") no-repeat left top; transition:all 1s; cursor: pointer;}
+.m_set:hover{background: url("../images/menu/set_hover.png") no-repeat left top;}
+
+.m_main{float: left; background: url("../images/menu/main.png") no-repeat left top; transition:all 1s; cursor: pointer; margin-right: 4.5%; margin-top: 3%;}
+.m_main:hover{background: url("../images/menu/main_hover.png") no-repeat left top;}
+
+.m_salad{float: left; background: url("../images/menu/salad.png") no-repeat left top; transition:all 1s; cursor: pointer; margin-right: 3%; margin-top: 3%;}
+.m_salad:hover{background: url("../images/menu/course_hover.png") no-repeat left top;}
+
+.m_drink{float: right; background: url("../images/menu/drink.png") no-repeat left top; cursor: pointer; transition:all 1s; margin-top: 3%;}
+.m_drink:hover{background: url("../images/menu/drink_hover.png") no-repeat left top;}
+
+
+
+
+/* NangManCafe.html */
+
+
+
+/*de_detail*/
+
+#de_detail_wrap{width: 85%; height: 220px; margin: 0 auto; position: relative; margin-top: 5%;}
+#de_detail{width: 100%; height: 100%; position: relative;}
+#de_detail img{width: 100%; height: 100%; position: absolute; left: 0; top: 0;}
+#de_detail img.selected{z-index:1;}
+.de_arrow{position: absolute; left: 48%; transform: translateX(-50%); bottom: 5px; cursor: pointer; z-index: 1;}
+
+.de_txt{width: 85%; margin: auto; margin-top: 5%;}
+
+
+/* NangManJooMak.html */
+
+
+.de_img{width: 85%; margin: 0 auto; margin-top: 8%;}
+.de_img img{width: 100%;}
+
+/*bottom*/
+
+#bottom{clear: both; width: 100%; margin-top: 8%;}
+#bottom .sns_bar{width: 100%; height:22px; background-color:#464544;}
+#bottom .sns_bar img{margin-right: 5px; margin-top: 5px; float: right; cursor: pointer;}
+#bottom .sns_bar img.ins{margin-right: 10px;}
+#bottom .bottom_bar {width: 100%; background-color: #2B2927; font-style: normal; font-size: 5px; color: #fff; letter-spacing: 0.05em; text-align: center; line-height: 15px;}
+#bottom .bottom_bar_logo{text-align: center; padding-top: 4.5%; padding-bottom: 3%;}
+#bottom .copy{background-color: #2B2927; color: #fff; letter-spacing: 0.1em;text-align: center; font-size: 3px; padding-top: 3%; padding-bottom: 3%;}
